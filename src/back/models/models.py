@@ -57,7 +57,7 @@ class WellModelPvt(PVT):
     pb: confloat(ge=0) = Field(title="Давление насыщения, атм")
 
 
-class WellModelCalcRequest(VlpCalcRequest):
+class  WellModelCalcRequest(VlpCalcRequest):
     pvt: WellModelPvt = Field(title="PVT")
     p_res: confloat(gt=0) = Field(title="Пластовое давление, атм")
     pi: confloat(ge=0) = Field(title="Коэффициент продуктивности, м3/сут/атм")
